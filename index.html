@@ -3,209 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança no Trabalho - Portal Completo</title>
+    <title>SafeWork - Segurança Ocupacional Profissional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER E NAVEGAÇÃO -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>🛡️ Segurança no Trabalho</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#dicas">Dicas de Segurança</a></li>
-                    <li><a href="#ppe">EPI's</a></li>
-                    <li><a href="#legislacao">Legislação</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- NAVBAR PREMIUM -->
+    <header class="navbar-premium">
+        <nav class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>SafeWork</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#dicas" class="nav-link">Dicas</a></li>
+                <li><a href="#ppe" class="nav-link">EPI's</a></li>
+                <li><a href="#certificacoes" class="nav-link">Certificações</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
+    <!-- HERO SECTION PREMIUM -->
+    <section id="home" class="hero-premium">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Proteção e Bem-estar no Trabalho</h2>
-            <p>Aprenda as melhores práticas de segurança ocupacional</p>
-            <button class="cta-button">Saiba Mais</button>
+            <h1 class="hero-title">Segurança Ocupacional de Classe Mundial</h1>
+            <p class="hero-subtitle">Proteja sua equipe com as melhores práticas e soluções inovadoras de segurança</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Começar Agora</button>
+                <button class="btn-secondary">Saiba Mais</button>
+            </div>
         </div>
-        <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65b?w=600&h=400&fit=crop" alt="Segurança no Trabalho">
+        <div class="hero-stats">
+            <div class="stat-box">
+                <h3>+500</h3>
+                <p>Empresas Atendidas</p>
+            </div>
+            <div class="stat-box">
+                <h3>98%</h3>
+                <p>Satisfação</p>
+            </div>
+            <div class="stat-box">
+                <h3>24/7</h3>
+                <p>Suporte</p>
+            </div>
+        </div>
     </section>
 
-    <!-- DICAS DE SEGURANÇA -->
-    <section id="dicas" class="dicas">
+    <!-- SERVIÇOS DESTACADOS -->
+    <section id="servicos" class="servicos-section">
         <div class="container">
-            <h2>10 Dicas Essenciais de Segurança</h2>
-            <div class="dicas-grid">
-                <div class="dica-card">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop" alt="Capacete">
-                    <h3>Use Equipamento de Proteção</h3>
-                    <p>Sempre use o EPI adequado para sua função. Nunca trabalhe sem proteção.</p>
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas em segurança ocupacional</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Treinamentos</h3>
+                    <p>Programas de treinamento especializados para sua equipe</p>
+                    <a href="#" class="card-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dica-card">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Postura">
-                    <h3>Mantenha Boa Postura</h3>
-                    <p>Evite lesões nas costas mantendo uma postura correta durante o trabalho.</p>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Conformidade</h3>
+                    <p>Garantia de compliance com normas regulamentadoras</p>
+                    <a href="#" class="card-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dica-card">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Limpeza">
-                    <h3>Mantenha o Ambiente Limpo</h3>
-                    <p>Elimine obstáculos e derramamentos que possam causar acidentes.</p>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análise de Risco</h3>
+                    <p>Avaliação detalhada e mapeamento de riscos</p>
+                    <a href="#" class="card-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dica-card">
-                    <img src="https://images.unsplash.com/photo-1576091160675-112996f3a7ca?w=400&h=300&fit=crop" alt="Primeiros Socorros">
-                    <h3>Conheça Primeiros Socorros</h3>
-                    <p>Saiba o básico de primeiros socorros para emergências rápidas.</p>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Implementação</h3>
+                    <p>Implementação de sistemas e procedimentos de segurança</p>
+                    <a href="#" class="card-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dica-card">
-                    <img src="https://images.unsplash.com/photo-1576091160541-112ba8d25d1d?w=400&h=300&fit=crop" alt="Máquinas">
-                    <h3>Respeite Máquinas</h3>
-                    <p>Nunca desative sistemas de segurança de máquinas industriais.</p>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Saúde Ocupacional</h3>
+                    <p>Programas de saúde e bem-estar no trabalho</p>
+                    <a href="#" class="card-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dica-card">
-                    <img src="https://images.unsplash.com/photo-1576091160399-1131cf677aeb?w=400&h=300&fit=crop" alt="Comunicação">
-                    <h3>Comunique Perigos</h3>
-                    <p>Sempre avise sobre riscos identificados a seus colegas e supervisores.</p>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Consultoria</h3>
+                    <p>Consultoria estratégica em segurança corporativa</p>
+                    <a href="#" class="card-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EQUIPAMENTOS DE PROTEÇÃO (EPI) -->
-    <section id="ppe" class="ppe">
+    <!-- DICAS PROFISSIONAIS -->
+    <section id="dicas" class="dicas-premium">
         <div class="container">
-            <h2>Equipamentos de Proteção Individual (EPI)</h2>
+            <div class="section-header">
+                <h2>Guia Prático de Segurança</h2>
+                <p>Dicas essenciais para um ambiente seguro</p>
+            </div>
+            <div class="dicas-carousel">
+                <div class="dica-item">
+                    <div class="dica-number">01</div>
+                    <h3>Equipamento de Proteção</h3>
+                    <p>Use sempre o EPI apropriado para cada atividade. Nunca trabalhe sem proteção adequada.</p>
+                    <div class="dica-tags">
+                        <span>#EPI</span>
+                        <span>#Essencial</span>
+                    </div>
+                </div>
+                <div class="dica-item">
+                    <div class="dica-number">02</div>
+                    <h3>Postura Ergonômica</h3>
+                    <p>Mantenha boa postura para evitar lesões nas costas e problemas de saúde ocupacional.</p>
+                    <div class="dica-tags">
+                        <span>#Ergonomia</span>
+                        <span>#Saúde</span>
+                    </div>
+                </div>
+                <div class="dica-item">
+                    <div class="dica-number">03</div>
+                    <h3>Ambiente Organizado</h3>
+                    <p>Mantenha o espaço de trabalho limpo, organizado e livre de obstáculos.</p>
+                    <div class="dica-tags">
+                        <span>#Organização</span>
+                        <span>#5S</span>
+                    </div>
+                </div>
+                <div class="dica-item">
+                    <div class="dica-number">04</div>
+                    <h3>Primeiros Socorros</h3>
+                    <p>Conheça procedimentos básicos de primeiros socorros para emergências.</p>
+                    <div class="dica-tags">
+                        <span>#Emergência</span>
+                        <span>#Saúde</span>
+                    </div>
+                </div>
+                <div class="dica-item">
+                    <div class="dica-number">05</div>
+                    <h3>Máquinas e Equipamentos</h3>
+                    <p>Nunca desative sistemas de segurança. Respeite limites e procedimentos.</p>
+                    <div class="dica-tags">
+                        <span>#Máquinas</span>
+                        <span>#NR12</span>
+                    </div>
+                </div>
+                <div class="dica-item">
+                    <div class="dica-number">06</div>
+                    <h3>Comunicação de Riscos</h3>
+                    <p>Sempre reporte riscos identificados à supervisão e colegas.</p>
+                    <div class="dica-tags">
+                        <span>#Comunicação</span>
+                        <span>#Segurança</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EPI'S PROFISSIONAL -->
+    <section id="ppe" class="ppe-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Equipamentos de Proteção Individual</h2>
+                <p>Catálogo completo de EPI's certificados</p>
+            </div>
+            <div class="ppe-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="head">Cabeça</button>
+                <button class="filter-btn" data-filter="body">Corpo</button>
+                <button class="filter-btn" data-filter="feet">Pés</button>
+            </div>
             <div class="ppe-grid">
-                <div class="ppe-item">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop" alt="Capacete">
+                <div class="ppe-card" data-category="head">
+                    <div class="ppe-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop" alt="Capacete">
+                        <span class="ppe-badge">Certificado</span>
+                    </div>
                     <h3>Capacete de Segurança</h3>
-                    <p>Protege contra impactos na cabeça. Obrigatório em obras e indústrias.</p>
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Proteção contra impactos. Conforme ABNT NBR 8422.</p>
+                    <div class="ppe-specs">
+                        <span><i class="fas fa-check"></i> Resistente</span>
+                        <span><i class="fas fa-check"></i> Leve</span>
+                        <span><i class="fas fa-check"></i> Durável</span>
+                    </div>
                 </div>
-                <div class="ppe-item">
-                    <img src="https://images.unsplash.com/photo-1576091160675-112996f3a7ca?w=300&h=300&fit=crop" alt="Óculos">
+                <div class="ppe-card" data-category="head">
+                    <div class="ppe-image">
+                        <img src="https://images.unsplash.com/photo-1576091160675-112996f3a7ca?w=400&h=300&fit=crop" alt="Óculos">
+                        <span class="ppe-badge">Certificado</span>
+                    </div>
                     <h3>Óculos de Proteção</h3>
-                    <p>Protege os olhos contra partículas, poeira e respingos químicos.</p>
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Proteção ocular contra partículas e radiação. ABNT NBR 14520.</p>
+                    <div class="ppe-specs">
+                        <span><i class="fas fa-check"></i> Antirrisco</span>
+                        <span><i class="fas fa-check"></i> Confortável</span>
+                        <span><i class="fas fa-check"></i> Antiembaçante</span>
+                    </div>
                 </div>
-                <div class="ppe-item">
-                    <img src="https://images.unsplash.com/photo-1576091160399-1131cf677aeb?w=300&h=300&fit=crop" alt="Luvas">
+                <div class="ppe-card" data-category="body">
+                    <div class="ppe-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-1131cf677aeb?w=400&h=300&fit=crop" alt="Luvas">
+                        <span class="ppe-badge">Certificado</span>
+                    </div>
                     <h3>Luvas de Proteção</h3>
-                    <p>Protege as mãos contra cortes, queimaduras e substâncias químicas.</p>
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Proteção das mãos contra múltiplos riscos. ABNT NBR 13847.</p>
+                    <div class="ppe-specs">
+                        <span><i class="fas fa-check"></i> Flexível</span>
+                        <span><i class="fas fa-check"></i> Aderente</span>
+                        <span><i class="fas fa-check"></i> Resistente</span>
+                    </div>
                 </div>
-                <div class="ppe-item">
-                    <img src="https://images.unsplash.com/photo-1576091160541-112ba8d25d1d?w=300&h=300&fit=crop" alt="Máscaras">
+                <div class="ppe-card" data-category="head">
+                    <div class="ppe-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Máscaras">
+                        <span class="ppe-badge">Certificado</span>
+                    </div>
                     <h3>Máscaras Respiratórias</h3>
-                    <p>Protege contra poeira, gases e vapores prejudiciais à saúde.</p>
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Proteção respiratória contra agentes nocivos. ABNT NBR 12018.</p>
+                    <div class="ppe-specs">
+                        <span><i class="fas fa-check"></i> Eficiente</span>
+                        <span><i class="fas fa-check"></i> Respirável</span>
+                        <span><i class="fas fa-check"></i> Ajustável</span>
+                    </div>
                 </div>
-                <div class="ppe-item">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=300&h=300&fit=crop" alt="Calçados">
+                <div class="ppe-card" data-category="feet">
+                    <div class="ppe-image">
+                        <img src="https://images.unsplash.com/photo-1576091160541-112ba8d25d1d?w=400&h=300&fit=crop" alt="Calçados">
+                        <span class="ppe-badge">Certificado</span>
+                    </div>
                     <h3>Calçados de Segurança</h3>
-                    <p>Protege os pés contra impactos e perfurações. Solado antiderrapante.</p>
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Proteção dos pés com solado antiderrapante. ABNT NBR 20344.</p>
+                    <div class="ppe-specs">
+                        <span><i class="fas fa-check"></i> Antiderrapante</span>
+                        <span><i class="fas fa-check"></i> Resistente</span>
+                        <span><i class="fas fa-check"></i> Confortável</span>
+                    </div>
                 </div>
-                <div class="ppe-item">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop" alt="Colete">
+                <div class="ppe-card" data-category="body">
+                    <div class="ppe-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Coletes">
+                        <span class="ppe-badge">Certificado</span>
+                    </div>
                     <h3>Coletes e Aventais</h3>
                     <p>Proteção do tronco contra riscos químicos e térmicos.</p>
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <div class="ppe-specs">
+                        <span><i class="fas fa-check"></i> Respirável</span>
+                        <span><i class="fas fa-check"></i> Durável</span>
+                        <span><i class="fas fa-check"></i> Versátil</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LEGISLAÇÃO -->
-    <section id="legislacao" class="legislacao">
+    <!-- CERTIFICAÇÕES -->
+    <section id="certificacoes" class="certificacoes-section">
         <div class="container">
-            <h2>Legislação e Normas</h2>
-            <div class="legislacao-grid">
-                <div class="lei-card">
-                    <h3>NR-1: Disposições Gerais</h3>
-                    <p>Estabelece o campo de aplicação das Normas Regulamentadoras e direitos/deveres.</p>
-                    <button class="btn-info">Saiba Mais</button>
+            <div class="section-header">
+                <h2>Normas e Certificações</h2>
+                <p>Conformidade com padrões internacionais</p>
+            </div>
+            <div class="certificacoes-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>ISO 45001</h3>
+                    <p>Sistema de Gestão de Segurança e Saúde Ocupacional</p>
+                    <p class="cert-desc">Padrão internacional para SST</p>
                 </div>
-                <div class="lei-card">
-                    <h3>NR-5: CIPA</h3>
-                    <p>Comissão Interna de Prevenção de Acidentes. Obrigatória em empresas com 20+ funcionários.</p>
-                    <button class="btn-info">Saiba Mais</button>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>ABNT NBR 12.098</h3>
+                    <p>Normas Regulamentadoras de Segurança do Trabalho</p>
+                    <p class="cert-desc">Legislação brasileira</p>
                 </div>
-                <div class="lei-card">
-                    <h3>NR-6: EPI</h3>
-                    <p>Define obrigações do empregador e do empregado quanto aos Equipamentos de Proteção.</p>
-                    <button class="btn-info">Saiba Mais</button>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>OHSAS 18001</h3>
+                    <p>Especificação de Gestão de Saúde Ocupacional</p>
+                    <p class="cert-desc">Segurança e saúde</p>
                 </div>
-                <div class="lei-card">
-                    <h3>NR-10: Eletricidade</h3>
-                    <p>Segurança em instalações e serviços com eletricidade. Treinamento obrigatório.</p>
-                    <button class="btn-info">Saiba Mais</button>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>NR-5 CIPA</h3>
+                    <p>Comissão Interna de Prevenção de Acidentes</p>
+                    <p class="cert-desc">Obrigatória em empresas</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FORMULÁRIO DE CONTATO -->
-    <section id="contato" class="contato">
+    <!-- CONTATO PROFISSIONAL -->
+    <section id="contato" class="contato-section">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required>
+            <div class="contato-wrapper">
+                <div class="contato-info">
+                    <h2>Entre em Contato</h2>
+                    <p>Fale conosco para soluções customizadas em segurança ocupacional</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 3000-0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@safework.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>São Paulo, SP - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="empresa">Empresa:</label>
-                    <input type="text" id="empresa" name="empresa" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Enviar Mensagem</button>
-            </form>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="empresa" placeholder="Sua Empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
             <div id="formMessage" class="form-message"></div>
         </div>
     </section>
 
-    <!-- FOOTER COM CRÉDITOS -->
-    <footer class="footer">
+    <!-- FOOTER PREMIUM -->
+    <footer class="footer-premium">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sobre Este Site</h3>
-                    <p>Portal dedicado à educação e promoção da segurança ocupacional.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SafeWork</h3>
+                    <p>Excelência em segurança ocupacional</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Links Úteis</h3>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
                     <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#dicas">Dicas</a></li>
-                        <li><a href="#ppe">EPI's</a></li>
-                        <li><a href="#legislacao">Legislação</a></li>
+                        <li><a href="#servicos">Treinamentos</a></li>
+                        <li><a href="#servicos">Conformidade</a></li>
+                        <li><a href="#servicos">Consultoria</a></li>
+                        <li><a href="#servicos">Análise de Risco</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p>Email: seguranca@trabalho.com.br</p>
-                    <p>Telefone: (11) 3000-0000</p>
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#dicas">Guias</a></li>
+                        <li><a href="#ppe">EPI's</a></li>
+                        <li><a href="#certificacoes">Certificações</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Segurança no Trabalho. Todos os direitos reservados.</p>
-                <p class="credits"><strong>Criado por:</strong> Gabriel Lima, Dayllon Kauan e Adryan Kaue</p>
+                <p>&copy; 2024 SafeWork. Todos os direitos reservados.</p>
+                <p class="credits">Desenvolvido por <strong>Gabriel Lima, Dayllon Kauan e Adryan Kaue</strong></p>
             </div>
         </div>
     </footer>
